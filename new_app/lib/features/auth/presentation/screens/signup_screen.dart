@@ -157,22 +157,27 @@ class _SignupScreenState extends State<SignupScreen> {
                   SizedBox(
                     height: 20,
                   ),
-                  Container(
-                    // height: 40,
-                    // width: 280,
-                    padding: EdgeInsets.symmetric(vertical: 10, horizontal: 12),
-                    decoration: BoxDecoration(
-                      border: BoxBorder.all(
+                  InkWell(
+                    onTap: (){
+                      Navigator.pushReplacementNamed(context, AppRoutes.verificationCodeScreen);
+                    },
+                    child: Container(
+                      // height: 40,
+                      // width: 280,
+                      padding: EdgeInsets.symmetric(vertical: 10, horizontal: 12),
+                      decoration: BoxDecoration(
+                        border: BoxBorder.all(
+                          color: Colors.brown,
+                        ),
+                        borderRadius: BorderRadius.circular(20.0),
                         color: Colors.brown,
                       ),
-                      borderRadius: BorderRadius.circular(20.0),
-                      color: Colors.brown,
-                    ),
-                    child: Center(
-                      child: Text(
-                        "Sign Up",
-                        style: TextStyle(
-                          color: Colors.white,
+                      child: Center(
+                        child: Text(
+                          "Sign Up",
+                          style: TextStyle(
+                            color: Colors.white,
+                          ),
                         ),
                       ),
                     ),

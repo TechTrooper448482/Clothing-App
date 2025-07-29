@@ -24,12 +24,12 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      backgroundColor: Colors.brown,
+      // backgroundColor: Colors.brown,
       body: Center(
         child: Text('Fashion App',style: TextStyle(
           fontSize: 32,
           fontWeight: FontWeight.bold,
-          color: Colors.black,
+          color: Colors.brown,
         ),),
       ),
     );
